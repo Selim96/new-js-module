@@ -132,8 +132,13 @@ const object = {};
 
 function massToObject(mass) {
     for (const key in mass[0]) {
-        object[key] = [];        
-    }
+      object[key] = [];
+  }
+
+  const massOFobj = [];
+  for (const obj of mass) {
+    
+  }
 
 
     return object;

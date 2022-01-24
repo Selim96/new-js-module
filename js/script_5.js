@@ -141,8 +141,32 @@ function massToObject(mass) {
       object[key].push(obj[key]);
     }
   }
-  return object;
+  let finalObject = {};
+  for (const objKey in object) {
+    finalObject[objKey] = object[objKey].flat();
+  }
+
+  const lastObject = {};
+  for (const objKey in finalObject) {
+    lastObject[objKey] = [];
+    for (let i = 0; i < finalObject[objKey].length; i += 1) {
+      if (finalObject[objKey].indexOf(finalObject[objKey](i)) === i) {
+        lastObject[objKey].push(finalObject[objKey](i));
+      }
+    }
+  }
+
+  return lastObject;
+
 }
 
 ;
 console.log(massToObject(users));
+
+
+
+// for (const obj of mass) {
+//     for (const key in obj) {
+//       object[key].push(obj[key]);
+//     }
+//   }

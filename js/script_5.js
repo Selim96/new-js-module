@@ -128,21 +128,21 @@ const users = [
   },
 ];
 
-const object = {};
+
 
 function massToObject(mass) {
+  const object = {};
     for (const key in mass[0]) {
       object[key] = [];
   }
 
-  const massOFobj = [];
   for (const obj of mass) {
-    
+    for (const key in obj) {
+      object[key].push(obj[key]);
+    }
   }
-
-
-    return object;
+  return object;
 }
 
-massToObject(users);
-console.log(object);
+;
+console.log(massToObject(users));

@@ -64,19 +64,36 @@
 
 // }
 
-function filterArray(numbers, value) {
+// function filterArray(numbers, value) {
    
-  let eee = [];
+//   let eee = [];
   
-  for (let i = 0; i < numbers.length; i += 1) {
-    if (numbers[i] > value) {
-      eee.push(numbers[i]);
-      console.log(eee);
-    }
-  }
-  return eee;
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       eee.push(numbers[i]);
+//       console.log(eee);
+//     }
+//   }
+//   return eee;
 
-  // Change code above this line
-}
+//   // Change code above this line
+// }
 
-filterArray([1, 5, 8, 3, 2, 7], 6);
+// filterArray([1, 5, 8, 3, 2, 7], 6);
+
+// function filterArray(numbers, value) {
+//   let eee = [];
+//   numbers.forEach(numbers[i] > value ? console.log(eee.push(numbers[i])) : return;)
+
+//   return eee;
+
+//   // Change code above this line
+// }
+// ---------------------------------------------------------
+const numbers = [1, 5, 8, 3, 2, 7];
+const value = 6;
+
+numbers.forEach((number) => 
+  (number > value) ? console.log(number) : console.log(`This ${number} is less than ${value}`));
+
+numbers.forEach( (number, index) => console.log(`Индекс ${index}, значение ${number}`));

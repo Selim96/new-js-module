@@ -90,10 +90,66 @@
 //   // Change code above this line
 // }
 // ---------------------------------------------------------
-const numbers = [1, 5, 8, 3, 2, 7];
-const value = 6;
+// const numbers = [1, 5, 8, 3, 2, 7];
+// const value = 6;
 
-numbers.forEach((number) => 
-  (number > value) ? console.log(number) : console.log(`This ${number} is less than ${value}`));
+// numbers.forEach((number) =>
+//   (number > value) ? console.log(number) : console.log(`This ${number} is less than ${value}`));
 
-numbers.forEach( (number, index) => console.log(`Индекс ${index}, значение ${number}`));
+// numbers.forEach( (number, index) => console.log(`Индекс ${index}, значение ${number}`));
+// -----------------------------------------------------------
+
+// class Storage {
+//    constructor ([...items]) {
+//        this.items = [...items];
+//    }
+//    getItems() {
+//        return this.items;
+//    }
+//    addItem(newItem) {
+//        return this.items.push(newItem);
+//    }
+//    removeItem(itemToRemove) {
+//        const index = this.items.indexOf(itemToRemove);
+//        return this.items.splice(index, 1);
+//    }
+// }
+
+
+// // Change code above this line
+// const storage = new Storage(["Nanitoids", "Prolonger", "Antigravitator"]);
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator"]
+// storage.addItem("Droid");
+// console.log(storage.getItems()); // ["Nanitoids", "Prolonger", "Antigravitator", "Droid"]
+// storage.removeItem("Prolonger");
+// console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
+// --------------------------------------------------------------
+
+class StringBuilder {
+    constructor(initialValue) {
+        return this.value = initialValue;
+    }
+    getValue() {
+        return this.value;
+    }
+    padStart(str) {
+        return this.value = str + this.value;
+    }
+    padEnd(str) {
+        return this.value = this.value + str;
+    }
+    padBoth(str) {
+        return this.value = str + this.value + str;
+    }
+}
+
+
+// Change code above this line
+const builder = new StringBuilder(".");
+console.log(builder.getValue()); // "."
+builder.padStart("^");
+console.log(builder.getValue()); // "^."
+builder.padEnd("^");
+console.log(builder.getValue()); // "^.^"
+builder.padBoth("=");
+console.log(builder.getValue()); // "=^.^="

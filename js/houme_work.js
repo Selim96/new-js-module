@@ -125,31 +125,31 @@
 // console.log(storage.getItems()); // ["Nanitoids", "Antigravitator", "Droid"]
 // --------------------------------------------------------------
 
-class StringBuilder {
-    constructor(initialValue) {
-        return this.value = initialValue;
-    }
-    getValue() {
-        return this.value;
-    }
-    padStart(str) {
-        return this.value = str + this.value;
-    }
-    padEnd(str) {
-        return this.value = this.value + str;
-    }
-    padBoth(str) {
-        return this.value = str + this.value + str;
-    }
-}
+// class StringBuilder {
+//     constructor(initialValue) {
+//         return this.value = initialValue;
+//     }
+//     getValue() {
+//         return this.value;
+//     }
+//     padStart(str) {
+//         return this.value = str + this.value;
+//     }
+//     padEnd(str) {
+//         return this.value = this.value + str;
+//     }
+//     padBoth(str) {
+//         return this.value = str + this.value + str;
+//     }
+// }
 
 
-// Change code above this line
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+// // Change code above this line
+// const builder = new StringBuilder(".");
+// console.log(builder.getValue()); // "."
+// builder.padStart("^");
+// console.log(builder.getValue()); // "^."
+// builder.padEnd("^");
+// console.log(builder.getValue()); // "^.^"
+// builder.padBoth("=");
+// console.log(builder.getValue()); // "=^.^="

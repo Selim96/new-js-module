@@ -153,3 +153,21 @@
 // console.log(builder.getValue()); // "^.^"
 // builder.padBoth("=");
 // console.log(builder.getValue()); // "=^.^="
+
+
+
+
+
+const settings = {
+  theme: "dark",
+  isAuthenticated: true,
+  options: [1, 2, 3],
+};
+
+localStorage.setItem("settings", JSON.stringify(settings));
+
+const savedSettings = localStorage.getItem("settings");
+const parsedSettings = JSON.parse(savedSettings);
+console.log(parsedSettings); // settings object
+// -----------------------------------------------------------
+

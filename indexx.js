@@ -1,19 +1,19 @@
 // var validator = require('validator');
 
 // console.log(validator.isEmail('foo@bar.com')); //=> true
-console.log("hi");
+// console.log("hi");
 
-// import './js/modules.js';
+// // import './js/modules.js';
 
-const greet = () => {
-  console.log("Hello!");
-};
+// const greet = () => {
+//   console.log("Hello!");
+// };
 
-const timerId = setInterval(greet, 1000);
+// const timerId = setInterval(greet, 1000);
 
-console.log(timerId);
-// clearTimeout(timerId);
-clearInterval(timerId);
+// console.log(timerId);
+// // clearTimeout(timerId);
+// clearInterval(timerId);
 // -------------------------------------
 // const isSuccess = true;
 
@@ -39,15 +39,16 @@ clearInterval(timerId);
 
 // console.log("After!");
 
-const makePromise = (text, delay) => {
-  return new Promise(resolve => {
-    setTimeout(() => resolve(text), delay);
-  });
-};
+// const makePromise = (text, delay) => {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve(text), delay);
+//   });
+// };
 
-const promiseA = makePromise("promiseA value", 1000);
-const promiseB = makePromise("promiseB value", 3000);
+// const promiseA = makePromise("promiseA value", 1000);
+// const promiseB = makePromise("promiseB value", 3000);
 
-Promise.all([promiseA, promiseB])
-  .then(value => console.log(value)) //["promiseA value", "promiseB value"]
-  .catch(error => console.log(error));
+// Promise.all([promiseA, promiseB])
+//   .then(value => console.log(value)) //["promiseA value", "promiseB value"]
+//   .catch(error => console.log(error));
+

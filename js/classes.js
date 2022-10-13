@@ -1,18 +1,34 @@
-const Car = function (value) { 
-    console.log(this);
-
-    this.a = value;
+class Car {
+    #c;
+    constructor({a=0, b=0, c=0}={}) {
+        this.a = a;
+        this.b = b;
+        this.#c = c;
+    }
+    get c() {
+        return this.#c;
+    }
+    set c(x) {
+        this.#c = x;
+    }
 };
-console.log(Car.prototype)
 
 
-const myCar = new Car(5);
-console.log(myCar.constructor)
 
+const myCar = new Car({a: 5, b: 25, c: 66});
+myCar.c = 100;
+console.log()
 
-function fun() {
-    console.log(this)
+class Audi extends Car {
+    constructor(obj) {
+        super(obj)
+    }
+
+    func() {
+        console.log("This is audi for you")
+    }
 }
 
-console.log(fun.prototype)
-
+const myAuto = new Audi({ a: 95 });
+myAuto.func()
+console.log()

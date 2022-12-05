@@ -10,5 +10,20 @@
 }
 
 #root {
-  color: red;
+  color: green;
+}
+
+.pressBtn {
+  color: blue;
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(0, 255, 76, 0.644);
+}
+
+.pressBtn:hover {
+  color: rgba(0, 255, 76, 0.644);
+  background-color: rgba(0, 0, 255, 0.644);
 }

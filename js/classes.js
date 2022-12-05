@@ -31,4 +31,17 @@ class Audi extends Car {
 
 const myAudi = new Audi({ a: 95, b: 500, c: 66 }, 25000);
 
-console.log(myAudi)
+console.log(myAudi);
+
+const main = document.querySelector('div[data-root="main"]');
+
+const container = document.createElement("div");
+
+container.textContent = "This is container";
+
+const button1 = document.createElement("button");
+button1.textContent = "Press me";
+button1.classList.add("pressBtn");
+
+main.append(container, button1);
+console.dir(main);

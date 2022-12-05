@@ -16,12 +16,12 @@ class Car {
 
 
 const myCar = new Car({a: 5, b: 25, c: 66});
-myCar.c = 100;
-console.log()
+// console.log(myCar)
 
 class Audi extends Car {
-    constructor(obj) {
-        super(obj)
+    constructor(obj, price) {
+        super(obj);
+        this.price = price;
     }
 
     func() {
@@ -29,6 +29,6 @@ class Audi extends Car {
     }
 }
 
-const myAuto = new Audi({ a: 95 });
-myAuto.func()
-console.log()
+const myAudi = new Audi({ a: 95, b: 500, c: 66 }, 25000);
+
+console.log(myAudi)

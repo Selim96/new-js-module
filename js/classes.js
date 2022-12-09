@@ -31,17 +31,37 @@ class Audi extends Car {
 
 const myAudi = new Audi({ a: 95, b: 500, c: 66 }, 25000);
 
-console.log(myAudi);
+// ===============================================================
 
 const main = document.querySelector('div[data-root="main"]');
 
 const container = document.createElement("div");
-
 container.textContent = "This is container";
+container.classList.add("container");
+container.addEventListener('click', onClickBtn);
 
-const button1 = document.createElement("button");
-button1.textContent = "Press me";
-button1.classList.add("pressBtn");
+const buttonAdd = document.createElement("button");
+buttonAdd.textContent = "Add button";
+buttonAdd.classList.add("pressBtn");
+buttonAdd.addEventListener('click', onClickCreateButtons)
 
-main.append(container, button1);
-console.dir(main);
+main.append(buttonAdd, container);
+
+let countBtn = 1;
+
+function onClickCreateButtons() {
+    const newButton = document.createElement("button");
+    newButton.type = "button";
+    newButton.textContent = `Button${countBtn}`;
+    newButton.classList.add("pressBtn");
+    countBtn += 1;
+    container.append(newButton);
+}
+
+function onClickBtn(e) {
+    if (e.target.nodeName !== "BUTTON") {
+        return;
+    }
+    
+    console.log(`Click on ${e.target.textContent}`)
+}

@@ -65,3 +65,7 @@ function onClickBtn(e) {
     
     console.log(`Click on ${e.target.textContent}`)
 }
+
+export const newFunction = () => {
+    console.log("newFunction is run");
+}

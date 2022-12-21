@@ -16,7 +16,7 @@ class Car {
 
 
 const myCar = new Car({a: 5, b: 25, c: 66});
-// console.log(myCar)
+console.log(myCar)
 
 class Audi extends Car {
     constructor(obj, price) {
@@ -69,3 +69,5 @@ function onClickBtn(e) {
 export const newFunction = () => {
     console.log("newFunction is run");
 }
+
+console.log("hyyyyyy")

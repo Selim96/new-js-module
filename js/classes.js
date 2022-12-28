@@ -33,19 +33,19 @@ const myAudi = new Audi({ a: 95, b: 500, c: 66 }, 25000);
 
 // ===============================================================
 
-const main = document.querySelector('div[data-root="main"]');
+// const main = document.querySelector('div[data-root="main"]');
 
-const container = document.createElement("div");
-container.textContent = "This is container";
-container.classList.add("container");
-container.addEventListener('click', onClickBtn);
+// const container = document.createElement("div");
+// container.textContent = "This is container";
+// container.classList.add("container");
+// container.addEventListener('click', onClickBtn);
 
-const buttonAdd = document.createElement("button");
-buttonAdd.textContent = "Add button";
-buttonAdd.classList.add("pressBtn");
-buttonAdd.addEventListener('click', onClickCreateButtons)
+// const buttonAdd = document.createElement("button");
+// buttonAdd.textContent = "Add button";
+// buttonAdd.classList.add("pressBtn");
+// buttonAdd.addEventListener('click', onClickCreateButtons)
 
-main.append(buttonAdd, container);
+// main.append(buttonAdd, container);
 
 let countBtn = 1;
 
@@ -66,8 +66,10 @@ function onClickBtn(e) {
     console.log(`Click on ${e.target.textContent}`)
 }
 
-export const newFunction = () => {
+const newFunction = () => {
     console.log("newFunction is run");
 }
 
-console.log("hyyyyyy")
+export default newFunction;
+
+console.log("hyyyyyy");

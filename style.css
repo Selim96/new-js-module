@@ -35,3 +35,19 @@
   flex-direction: column;
   margin-bottom: 15px;
 }
+/* =============================================== */
+
+.root {
+  padding: 20px 10px;
+  width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 15px;
+  font-weight: 700;
+}

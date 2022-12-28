@@ -52,6 +52,9 @@
 //   .then(value => console.log(value)) //["promiseA value", "promiseB value"]
 //   .catch(error => console.log(error));
 
-import { newFunction } from "../js/classes.js";
-newFunction();
+import newFunction from "../js/classes";
 
+// console.log(newFunction())
+// newFunction();
+
+import "../js/script_8"
